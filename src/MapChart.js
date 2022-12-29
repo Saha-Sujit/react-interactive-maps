@@ -19,8 +19,6 @@ const MapChart = () => {
     lng: "",
   });
 
-  // console.log(passData);
-  const handleClick = () => {};
   return (
     <div className="container">
       <ComposableMap className="mapdiv">
@@ -47,11 +45,11 @@ const MapChart = () => {
             }}
           >
             {pointerData.data <= 300 ? (
-              <circle r={8} fill="#C23A3A" />
+              <rect width="10" height="10" fill="#C23A3A" />
             ) : pointerData.data >= 300 && pointerData.data <= 600 ? (
-              <circle r={10} fill="#4092C1" />
+              <rect width="12" height="12" fill="#4092C1" />
             ) : (
-              <circle r={12} fill="#49178D" />
+              <rect width="14" height="14" r={12} fill="#49178D" />
             )}
           </Marker>
         ))}
