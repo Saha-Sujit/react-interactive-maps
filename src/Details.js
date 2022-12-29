@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const Details = (props) => {
   return (
     <div className="detailsCont">
-      {props.mapdata.id == "" ? (
+      {props.mapdata.id === "" ? (
         <p>Please Click on any location to get the details.</p>
       ) : (
         <>
